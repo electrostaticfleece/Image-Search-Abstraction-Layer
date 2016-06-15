@@ -1,6 +1,6 @@
 var pg = require('pg');
 var dbUrl = process.env.DATABASE_URL;
-var table = process.env.table;
+var table = process.env.TABLE;
 var rows = [];
 var rollback = function(client, done) {
   client.query('ROLLBACK', function(err) {
